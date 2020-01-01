@@ -1,0 +1,18 @@
+{
+  "name": "denispersonalsite",
+  "version": "1.0.0",
+  "description": "Interesting project",
+  "author": "Denis Goldman",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^2.0.0",
+    "vue-i18n": "^7.3.2"
+  },
+  "devDependencies": {}
+}
