@@ -1,0 +1,13 @@
+$layout_width: 1440px;
+$header_height: 50px;
+
+@mixin header_light {
+    box-shadow: 0 4px 12px 0 rgba(0,0,0,.05);
+    background: #fff;
+}
+
+@mixin header_dark {
+    box-shadow: none;
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: saturate(180%) blur(20px);
+}

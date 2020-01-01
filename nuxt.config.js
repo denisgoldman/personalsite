@@ -13,7 +13,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Quicksand&display=swap'}
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap'}
     ]
   },
   /*
@@ -23,7 +23,7 @@ export default {
   /*
   ** Global CSS
   */
-  css: ['@/assets/main.scss'],
+  //css: ['~/assets/main.scss'],
   /*
   ** Plugins to load before mounting the App
   */
@@ -42,8 +42,13 @@ export default {
   /*
   ** Nuxt.js modules
   */
-  modules: [
-  ],
+  modules: ['@nuxtjs/style-resources'],
+  styleResources: {
+    scss: [
+      './assets/main.scss',
+      './assets/_variables.scss'
+      ]
+  },
   /*
   ** Build configuration
   */
