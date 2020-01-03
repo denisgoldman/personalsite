@@ -36,9 +36,9 @@ export default {
 
 .burger-container {
   position: relative;
-  display: inline-block;
+  display: flex;
+  align-items: center;
   height: 50px;
-  width: 50px;
   cursor: pointer;
   transform: rotate(0deg);
   transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
@@ -49,8 +49,6 @@ export default {
     height: 8px;
     position: relative;
     display: block;
-    margin: -4px auto 0;
-    top: 50%;
     .bar {
       width: 100%;
       height: 1px;

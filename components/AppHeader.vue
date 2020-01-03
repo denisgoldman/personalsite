@@ -2,9 +2,13 @@
   <header class="header">
     <input class="hidden-checkbox" type="checkbox" id="header-checkbox" />
     <div class="header--nav-strip">
-    <label class="header--checkbox-label" for="header-checkbox"><BurgerIcon /></label>
-    <div class="header--logo"><Logo /></div>
-    <div class="language-selector__mobile">
+      <label class="header--checkbox-label" for="header-checkbox">
+        <BurgerIcon />
+      </label>
+      <div class="header--logo">
+        <Logo />
+      </div>
+      <div class="language-selector__mobile">
         <NuxtLink
           v-if="$i18n.locale === 'de'"
           :to="`/en` + $route.fullPath"
@@ -114,45 +118,73 @@ export default {
 // }
 
 .header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    @include header_light;
+
+    @media (prefers-color-scheme: dark) {
+        @include header_dark;
+    }
 
   .header--link {
-        font-size: 14px;
-        font-family: "Quicksand", sans-serif;
-        text-decoration: none;
-        transition: all .3s;
+    font-size: 17px;
+    font-family: "Quicksand", sans-serif;
+    text-decoration: none;
+    transition: all 0.3s;
 
-        @media (prefers-color-scheme: dark) {
-            color: $textColor_dark;
-        }
-
-        &:visited {
-            color: $textColor_light;
-
-            @media (prefers-color-scheme: dark) {
-            color: $textColor_dark;
-        }
-
-        }
-
-        &:hover {
-            transition: all .3s;
-            background: linear-gradient(90deg,#ff8a00,#e52e71);
-            -webkit-text-fill-color: transparent;
-            box-decoration-break: clone;
-            background-clip: text;
-        }
+    @media (prefers-color-scheme: dark) {
+      color: $textColor_dark;
     }
+
+    &:visited {
+      color: $textColor_light;
+
+      @media (prefers-color-scheme: dark) {
+        color: $textColor_dark;
+      }
+    }
+
+    &:hover {
+      transition: all 0.3s;
+      background: linear-gradient(90deg, #ff8a00, #e52e71);
+      -webkit-text-fill-color: transparent;
+      box-decoration-break: clone;
+      background-clip: text;
+    }
+  }
 
   .header--nav-strip {
-      display: flex;
-      justify-content: space-between;
-      height: 50px;
-      align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 20px;
+    align-items: center;
 
-    .header--checkbox-label {
-        height: 50px;
+    .language-selector__mobile {
+      .header--link {
+        font-size: 14px;
+      }
     }
+  }
 
+  .header--menu {
+    //   padding: 0 20px 20px 20px;
+    //   border-top: 1px solid #333;
+      border-bottom: 1px solid #333;
+
+      .header--menu__links {
+          .header--link {
+              padding: 10px 0;
+          }
+          .header--link:last-of-type{
+              padding-bottom: 0px;
+          }
+      }
+
+    .header--menu__options {
+      display: none;
+    }
   }
 
   .hidden-checkbox {
@@ -161,14 +193,16 @@ export default {
       max-height: 0;
       overflow: hidden;
       opacity: 0;
-      transition: max-height 0.8s cubic-bezier(0, 1, 0, 1), opacity 0.5s ease-in;
+      padding: 0 20px 0 20px;
+      transition: max-height 0.8s cubic-bezier(0, 1, 0, 1), opacity 0.5s ease-in, padding 0.8s ease-in;
     }
 
     &:checked ~ nav {
       max-height: 100vh;
       overflow: visible;
       opacity: 1;
-      transition: max-height 0.8s ease-in, opacity 0.3s ease-in;
+      padding: 0 20px 20px 20px;
+      transition: max-height 0.8s ease-in, opacity 0.3s ease-in, padding 0.1s ease-in;
     }
   }
 
@@ -179,8 +213,6 @@ export default {
   .header--menu__links {
     display: flex;
     flex-direction: column;
-
-    
   }
 }
 </style>
