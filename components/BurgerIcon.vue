@@ -15,7 +15,7 @@ export default {
 
 <style lang="scss">
 .hidden-checkbox {
-  &:checked + label {
+  &:checked + .header--nav-strip {
     .burger-container {
       transform: rotate(90deg);
       #burger {

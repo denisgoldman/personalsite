@@ -7,7 +7,9 @@
       "resume": "Resume",
       "about": "Über mich",
       "english": "English",
-      "german": "Deutsch"
+      "german": "Deutsch",
+      "englishCode": "EN",
+      "germanCode": "DE"
     },
     "home": {
       "title": "Wilkommen",
