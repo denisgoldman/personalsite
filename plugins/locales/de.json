@@ -1,9 +1,13 @@
 {
+    "head": {
+      "title": "Denis Goldman — Softwareentwickler"
+    },
     "links": {
-      "home": "Heim",
-      "about": "About",
-      "english": "Englische version",
-      "german": "Deutsche version"
+      "portfolio": "Portfolio",
+      "resume": "Resume",
+      "about": "Über mich",
+      "english": "English",
+      "german": "Deutsch"
     },
     "home": {
       "title": "Wilkommen",

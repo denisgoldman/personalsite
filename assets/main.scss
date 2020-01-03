@@ -1,9 +1,14 @@
 html, body {
-    background-color: #fff;
-    color: #2e2f30;
+    background-color: $backgroundColor_light;
     letter-spacing: 0.5px;
     font-size: 18px;
     font-family: "Quicksand", "Source Sans Pro", Arial, sans-serif;
     height: 100vh;
     margin: 0;
+
+    @media (prefers-color-scheme: dark) {
+      background-color: $backgroundColor_dark;
+      color: #fff;
+  }
+
   }

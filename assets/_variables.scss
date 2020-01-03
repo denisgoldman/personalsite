@@ -1,6 +1,14 @@
 $layout_width: 1440px;
 $header_height: 50px;
 
+$textColor_light: #000;
+$textColor_dark: #fff;
+
+$backgroundColor_light: #f7f7f7;
+$backgroundColor_dark: #000;
+
+$breakpoint_mobile: 768px;
+
 @mixin header_light {
     box-shadow: 0 4px 12px 0 rgba(0,0,0,.05);
     background: #fff;

@@ -13,7 +13,8 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap'}
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap'},
+      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'}
     ]
   },
   /*
@@ -45,8 +46,8 @@ export default {
   modules: ['@nuxtjs/style-resources'],
   styleResources: {
     scss: [
+      './assets/_variables.scss',
       './assets/main.scss',
-      './assets/_variables.scss'
       ]
   },
   /*

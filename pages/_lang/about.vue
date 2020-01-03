@@ -12,7 +12,7 @@
 <script>
 export default {
   head () {
-    return { title: this.$t('about.title') }
+    return { title: this.$t('head.title') }
   }
 }
 </script>
