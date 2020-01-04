@@ -118,14 +118,14 @@ export default {
 // }
 
 .header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    @include header_light;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  @include header_light;
 
-    @media (prefers-color-scheme: dark) {
-        @include header_dark;
-    }
+  @media (prefers-color-scheme: dark) {
+    @include header_dark;
+  }
 
   .header--link {
     font-size: 17px;
@@ -171,16 +171,16 @@ export default {
   .header--menu {
     //   padding: 0 20px 20px 20px;
     //   border-top: 1px solid #333;
-      border-bottom: 1px solid #333;
+    border-bottom: 1px solid #333;
 
-      .header--menu__links {
-          .header--link {
-              padding: 10px 0;
-          }
-          .header--link:last-of-type{
-              padding-bottom: 0px;
-          }
+    .header--menu__links {
+      .header--link {
+        padding: 10px 0;
       }
+      .header--link:last-of-type {
+        padding-bottom: 0px;
+      }
+    }
 
     .header--menu__options {
       display: none;
@@ -194,7 +194,8 @@ export default {
       overflow: hidden;
       opacity: 0;
       padding: 0 20px 0 20px;
-      transition: max-height 0.8s cubic-bezier(0, 1, 0, 1), opacity 0.5s ease-in, padding 0.8s ease-in;
+      transition: max-height 0.8s cubic-bezier(0, 1, 0, 1), opacity 0.5s ease-in,
+        padding 0.8s ease-in;
     }
 
     &:checked ~ nav {
@@ -202,7 +203,8 @@ export default {
       overflow: visible;
       opacity: 1;
       padding: 0 20px 20px 20px;
-      transition: max-height 0.8s ease-in, opacity 0.3s ease-in, padding 0.1s ease-in;
+      transition: max-height 0.8s ease-in, opacity 0.3s ease-in,
+        padding 0.1s ease-in;
     }
   }
 
@@ -213,6 +215,46 @@ export default {
   .header--menu__links {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media (min-width: $breakpoint_mobile) {
+  .header {
+      display: flex;
+    .header--nav-strip {
+        padding: 0 20px;
+      .header--checkbox-label {
+        display: none;
+      }
+      .language-selector__mobile {
+          display: none;
+      }
+    }
+
+    .header--menu {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        justify-content: space-between;
+        .header--menu__links {
+            flex-direction: row;
+            .header--link:not(:first-of-type) {
+                margin-left: 20px;
+            }
+        }
+        .header--menu__options {
+         display: block;
+        }
+    }
+
+    .hidden-checkbox ~ nav {
+      opacity: 1;
+      max-height: 100vh;
+      border-bottom: none;
+      padding: 0;
+      padding-right: 20px;
+      transition: none;
+    }
   }
 }
 </style>
