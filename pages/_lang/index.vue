@@ -1,18 +1,18 @@
 <template>
   <div class="Content">
-    <!-- <div class="container">
-      <div class="Content__Title">
-        {{ $t('home.title') }}
-      </div>
-      <p>{{ $t('home.introduction') }}</p>
-    </div> -->
+    <Hero/>
   </div>
 </template>
 
 <script>
+import Hero from "@/components/Hero"
+
 export default {
   head () {
     return { title: this.$t('head.title') }
+  },
+  components: {
+    Hero
   }
 }
 </script>

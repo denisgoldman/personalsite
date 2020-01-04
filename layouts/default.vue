@@ -18,6 +18,7 @@ export default {
 
 <style lang="scss">
   .content {
-    padding: $header_height 20px 0 20px;
+    margin: $header_height auto 0 auto;
+    max-width: $layout_width;
   }
 </style>

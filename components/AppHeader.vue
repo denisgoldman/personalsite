@@ -123,6 +123,7 @@ export default {
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 100;
   @include header_light;
 
   @media (prefers-color-scheme: dark) {
@@ -277,4 +278,17 @@ export default {
     }
   }
 }
+
+@media (min-width: $layout_width) {
+  .header {
+  .header--nav-strip {
+    padding-left: 0;
+  }
+  .hidden-checkbox ~ nav {
+    padding-right: 0;
+  }
+  }
+}
+
+
 </style>
