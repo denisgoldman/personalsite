@@ -1,4 +1,5 @@
 <template>
+<div class="header-container">
   <header class="header">
     <input class="hidden-checkbox" type="checkbox" id="header-checkbox" />
     <div class="header--nav-strip">
@@ -49,6 +50,7 @@
       </div>
     </nav>
   </header>
+  </div>
 </template>
 
 <script>
@@ -219,6 +221,12 @@ export default {
 }
 
 @media (min-width: $breakpoint_mobile) {
+
+  .header-container {
+    max-width: $layout_width;
+    margin: 0 auto;
+  }
+
   .header {
     display: flex;
     max-width: $layout_width;
