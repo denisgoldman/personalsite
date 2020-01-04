@@ -1,8 +1,9 @@
-# denispersonalsite
+# NUXT personal site/portfolio
 
-> Interesting project
+This is a work in progress personal site/portfolio i am building for myself.
+Project is based on NUXT.JS Vue Framework with planned support for internationalization and automatic theme switching based on user browser/device theme.
 
-## Build Setup
+## Build Setup and Startup
 
 ``` bash
 # install dependencies
