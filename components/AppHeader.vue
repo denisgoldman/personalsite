@@ -220,31 +220,43 @@ export default {
 
 @media (min-width: $breakpoint_mobile) {
   .header {
-      display: flex;
+    display: flex;
+    max-width: $layout_width;
     .header--nav-strip {
-        padding: 0 20px;
+      padding: 0 20px;
       .header--checkbox-label {
         display: none;
       }
       .language-selector__mobile {
-          display: none;
+        display: none;
       }
     }
 
     .header--menu {
-        display: flex;
-        align-items: center;
-        flex-grow: 1;
-        justify-content: space-between;
-        .header--menu__links {
-            flex-direction: row;
-            .header--link:not(:first-of-type) {
-                margin-left: 20px;
-            }
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+      justify-content: space-between;
+      .header--menu__links {
+        flex-direction: row;
+        .header--link:not(:first-of-type) {
+          margin-left: 20px;
         }
-        .header--menu__options {
-         display: block;
+        .header--link {
+          transition: all 0.5s;
+          &:hover {
+            cursor: pointer;
+            transition: all 0.5s;
+            background: linear-gradient(90deg, #ff8a00, #e52e71);
+            -webkit-text-fill-color: transparent;
+            box-decoration-break: clone;
+            background-clip: text;
+          }
         }
+      }
+      .header--menu__options {
+        display: block;
+      }
     }
 
     .hidden-checkbox ~ nav {
