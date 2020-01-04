@@ -1,7 +1,12 @@
 <template>
   <div class="hero">
-    <img src="@/assets/images/bentley.jpeg" />
-    <div class="transparent"></div>
+    <img class="hero--image" src="@/assets/images/denis_lg.jpeg" />
+    <div class="hero--text-container">
+        <div class="hero--title">
+            <span>{{$t('home.welcomeMessage')}}</span>
+            <div class="hero--description">{{$t('home.downloadResume')}}<i class="fas fa-arrow-circle-down"></i></div>
+            </div>
+    </div>
   </div>
 </template>
 
@@ -12,22 +17,6 @@ export default {
 </script>
 
 <style lang="scss">
-@mixin gradient_light {
-  background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,0) 33%, rgba(255,255,255,0.51) 67%, rgba(255,255,255,1) 100%);
-background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 33%,rgba(255,255,255,0.51) 67%,rgba(255,255,255,1) 100%);
-background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 33%,rgba(255,255,255,0.51) 67%,rgba(255,255,255,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 );
-
-}
-
-@mixin gradient_dark {
-  background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(129,129,129,0) 33%, rgba(0,0,0,0.51) 67%, rgba(0,0,0,1) 100%);
-background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(129,129,129,0) 33%,rgba(0,0,0,0.51) 67%,rgba(0,0,0,1) 100%);
-background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(129,129,129,0) 33%,rgba(0,0,0,0.51) 67%,rgba(0,0,0,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#000000',GradientType=1 );
-
-
-}
 
 .hero {
   max-width: $layout_width;
@@ -38,17 +27,42 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     height: 100%;
     object-fit: cover;
   }
-  .transparent {
+  .hero--text-container {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    @include gradient_light;
 
-    @media (prefers-color-scheme: dark) {
-      @include gradient_dark;
+    .hero--title {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: perspective(1px) translateY(-50%);
+        padding: 20px;
+        font-family: "Quicksand", serif;
+        font-weight: 700;
+        font-size: 30px;
+        max-width: 40%;
+        @include header_dark;
+
+        span {
+            word-break: break-word;
+        }
+
+        .hero--description {
+            margin-top: 10px;
+            font-size: 15px;
+            font-family: "Quicksand", serif;
+            font-weight: 500;
+
+            i {
+                margin-left: 5px;
+            }
+        }
+
     }
+
   }
 }
 </style>

@@ -13,7 +13,9 @@
     },
     "home": {
       "title": "Wilkommen",
-      "introduction": "Das ist eine Seite auf Deutsch."
+      "introduction": "Das ist eine Seite auf Deutsch.",
+      "welcomeMessage": "Hallo! Ich bin Denis — Softwareentwickler mit Begeisterung für Design.",
+      "downloadResume": "Lebenslauf (PDF)"
     },
     "about": {
       "title": "Über",

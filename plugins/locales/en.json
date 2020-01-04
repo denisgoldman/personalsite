@@ -13,7 +13,9 @@
     },
     "home": {
       "title": "Welcome",
-      "introduction": "This is an introduction in English."
+      "introduction": "This is an introduction in English.",
+      "welcomeMessage": "Hello! I am Denis — software developer with passion for design.",
+      "downloadResume": "Resume (PDF)"
     },
     "about": {
       "title": "About",
