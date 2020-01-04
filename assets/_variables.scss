@@ -19,3 +19,15 @@ $breakpoint_mobile: 768px;
     background: rgba(0,0,0,0.8);
     backdrop-filter: saturate(180%) blur(20px);
 }
+
+@mixin gradient_sunset {
+    background: linear-gradient(to right, #ee0979, #ff6a00); 
+}
+
+@mixin gradient_mirage {
+    background: linear-gradient(to right, #16222a, #3a6073);
+}
+
+@mixin gradient_frost {
+    background: linear-gradient(to right, #000428, #004e92);
+}

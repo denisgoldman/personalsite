@@ -34,6 +34,10 @@ export default {
     width: 100%;
     height: 100%;
 
+    @media (max-width: $breakpoint_mobile) {
+        position: relative;
+    }
+
     .hero--title {
         position: absolute;
         right: 0;
@@ -44,7 +48,17 @@ export default {
         font-weight: 700;
         font-size: 30px;
         max-width: 40%;
+        color: #f7f7f7;
         @include header_dark;
+
+        @media (max-width: $breakpoint_mobile) {
+            position: relative;
+            right: auto;
+            top: auto;
+            transform: none;
+            max-width: 100%;
+            background: none;
+        }
 
         span {
             word-break: break-word;
@@ -55,9 +69,16 @@ export default {
             font-size: 15px;
             font-family: "Quicksand", serif;
             font-weight: 500;
+            color: #dcdcdc;
+
+            &:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
 
             i {
                 margin-left: 5px;
+                color: #dcdcdc;
             }
         }
 
