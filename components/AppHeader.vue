@@ -99,7 +99,7 @@ export default {
 
     &:hover {
       transition: all 0.3s;
-      background: linear-gradient(90deg, #ff8a00, #e52e71);
+      @include gradient_sunset;
       -webkit-text-fill-color: transparent;
       box-decoration-break: clone;
       background-clip: text;
@@ -218,7 +218,7 @@ export default {
           &:hover {
             cursor: pointer;
             transition: all 0.5s;
-            background: linear-gradient(90deg, #ff8a00, #e52e71);
+            @include gradient_sunset;
             -webkit-text-fill-color: transparent;
             box-decoration-break: clone;
             background-clip: text;
