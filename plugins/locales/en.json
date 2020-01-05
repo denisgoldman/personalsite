@@ -17,6 +17,9 @@
       "welcomeMessage": "Hello! I am Denis — software developer with passion for design.",
       "downloadResume": "Resume (PDF)"
     },
+    "projects": {
+      "previewTitle": "Projects"
+    },
     "about": {
       "title": "About",
       "introduction": "This page is made to give you more informations."

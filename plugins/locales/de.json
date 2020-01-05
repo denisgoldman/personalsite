@@ -17,6 +17,9 @@
       "welcomeMessage": "Hallo! Ich bin Denis — Softwareentwickler mit Begeisterung für Design.",
       "downloadResume": "Lebenslauf (PDF)"
     },
+    "projects": {
+      "previewTitle": "Projekte"
+    },
     "about": {
       "title": "Über",
       "introduction": "Das ist beschreibung auf Deutsch."
