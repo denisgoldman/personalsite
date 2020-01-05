@@ -157,7 +157,7 @@ export default {
       overflow: visible;
       opacity: 1;
       padding: 0 20px 20px 20px;
-      transition: max-height 0.8s ease-in, opacity 0.3s ease-in,
+      transition: max-height 0.8s ease-in, opacity 0.5s ease-in,
         padding 0.1s ease-in;
     }
   }

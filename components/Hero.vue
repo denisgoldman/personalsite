@@ -1,6 +1,6 @@
 <template>
   <div class="hero">
-    <img class="hero--image" :src="require(`@/assets/images/${image}`)" />
+    <img class="hero--image" :src="require(`@/assets/images/heroes/${image}`)" />
     <div class="hero--text-container">
       <div class="hero--title">
         <span>{{title}}</span>
@@ -35,12 +35,16 @@ export default {
   max-width: $layout_width;
   height: 500px;
   position: relative;
+  @media (max-width: $breakpoint_mobile) {
+      height: auto;
+  }
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     @media (max-width: $breakpoint_mobile) {
       height: 50%;
+      min-height: 250px;
     }
   }
   .hero--text-container {
@@ -52,6 +56,8 @@ export default {
 
     @media (max-width: $breakpoint_mobile) {
       position: relative;
+      height: auto;
+      text-align: center;
     }
 
     .hero--title {
@@ -94,6 +100,10 @@ export default {
 
         @media (prefers-color-scheme: dark) {
           color: #fff;
+        }
+
+        @media (max-width: $breakpoint_mobile) {
+            margin-top: 20px;
         }
 
         span:hover {
