@@ -54,9 +54,12 @@ export default {
       height: 1px;
       display: block;
       position: relative;
-      background: #fff;
+      background: #000;
       transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
       transition-delay: 0s;
+      @media(prefers-color-scheme: dark) {
+        background: #fff;
+      }
       &.topBar {
         transform: translateY(0px) rotate(0deg);
       }

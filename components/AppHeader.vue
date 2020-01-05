@@ -66,58 +66,6 @@ export default {
 </script>
 
 <style lang="scss">
-// .header {
-//     height: $header_height;
-//     line-height: $header_height;
-//     position: fixed;
-//     width: 100%;
-//     @include header_light;
-
-//     .header--menu {
-//         max-width: $layout_width;
-//         margin: 0 auto;
-//         display: flex;
-//         justify-content: space-between;
-//         padding: 0 20px;
-//     }
-
-//     .header--link {
-//         font-size: 14px;
-//         font-family: "Quicksand", sans-serif;
-//         text-decoration: none;
-//         transition: all .3s;
-
-//         &:not(:first-of-type) {
-//             margin-left: 20px;
-//         }
-
-//         @media (prefers-color-scheme: dark) {
-//             color: $textColor_dark;
-//         }
-
-//         &:visited {
-//             color: $textColor_light;
-
-//             @media (prefers-color-scheme: dark) {
-//             color: $textColor_dark;
-//         }
-
-//         }
-
-//         &:hover {
-//             transition: all .3s;
-//             background: linear-gradient(90deg,#ff8a00,#e52e71);
-//             -webkit-text-fill-color: transparent;
-//             box-decoration-break: clone;
-//             background-clip: text;
-//         }
-//     }
-
-//     @media (prefers-color-scheme: dark) {
-//         @include header_dark;
-//     }
-
-// }
 
 .header {
   position: fixed;
@@ -133,6 +81,7 @@ export default {
   .header--link {
     font-size: 17px;
     font-family: "Quicksand", sans-serif;
+    font-weight: 500;
     text-decoration: none;
     transition: all 0.3s;
 
@@ -172,7 +121,11 @@ export default {
   }
 
   .header--menu {
-    border-bottom: 1px solid #333;
+    box-shadow: 0 4px 12px 0 rgba(0,0,0,.05);
+    @media (prefers-color-scheme: dark) {
+      border-bottom: 1px solid #333;
+      box-shadow: none;
+    }
 
     .header--menu__links {
       .header--link {
@@ -253,6 +206,7 @@ export default {
       align-items: center;
       flex-grow: 1;
       justify-content: space-between;
+      box-shadow: none;
       .header--menu__links {
         flex-direction: row;
         .header--link:not(:first-of-type) {
@@ -260,6 +214,7 @@ export default {
         }
         .header--link {
           transition: all 0.5s;
+          font-size: 15px;
           &:hover {
             cursor: pointer;
             transition: all 0.5s;
@@ -272,6 +227,9 @@ export default {
       }
       .header--menu__options {
         display: block;
+        .header--link {
+          font-size: 15px;
+        }
       }
     }
 
