@@ -48,8 +48,13 @@ export default {
         font-weight: 700;
         font-size: 30px;
         max-width: 40%;
-        color: #f7f7f7;
-        @include header_dark;
+        color: #000;
+        @include blurred-background_light;
+
+        @media (prefers-color-scheme: dark) {
+            color: #fff;
+            @include blurred-background_dark;
+        }
 
         @media (max-width: $breakpoint_mobile) {
             position: relative;
@@ -69,7 +74,11 @@ export default {
             font-size: 15px;
             font-family: "Quicksand", serif;
             font-weight: 500;
-            color: #dcdcdc;
+            color: #222;
+
+            @media (prefers-color-scheme: dark) {
+                color: #fff;
+            }
 
             &:hover {
                 text-decoration: underline;
@@ -78,7 +87,10 @@ export default {
 
             i {
                 margin-left: 5px;
-                color: #dcdcdc;
+                color: #222;
+                @media (prefers-color-scheme: dark) {
+                color: #fff;
+            }
             }
         }
 

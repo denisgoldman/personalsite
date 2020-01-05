@@ -172,8 +172,6 @@ export default {
   }
 
   .header--menu {
-    //   padding: 0 20px 20px 20px;
-    //   border-top: 1px solid #333;
     border-bottom: 1px solid #333;
 
     .header--menu__links {
@@ -224,13 +222,22 @@ export default {
 @media (min-width: $breakpoint_mobile) {
 
   .header-container {
-    max-width: $layout_width;
-    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    @include header_light;
+    @media (prefers-color-scheme: dark) {
+      @include header_dark;
+    }
   }
 
   .header {
     display: flex;
     max-width: $layout_width;
+    position: relative;
+    margin: 0 auto;
+    box-shadow: none;
+    background: none;
     .header--nav-strip {
       padding: 0 20px;
       .header--checkbox-label {

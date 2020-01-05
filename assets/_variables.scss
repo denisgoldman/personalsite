@@ -10,12 +10,22 @@ $backgroundColor_dark: #000;
 $breakpoint_mobile: 768px;
 
 @mixin header_light {
-    // box-shadow: 0 4px 12px 0 rgba(0,0,0,.05);
+    box-shadow: 0 4px 12px 0 rgba(0,0,0,.05);
     background: #fff;
 }
 
 @mixin header_dark {
     box-shadow: none;
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+@mixin blurred-background_light {
+    background: rgba(255,255,255,0.9);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+@mixin blurred-background_dark {
     background: rgba(0,0,0,0.8);
     backdrop-filter: saturate(180%) blur(20px);
 }
