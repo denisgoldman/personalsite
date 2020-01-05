@@ -3,7 +3,7 @@
     <img class="hero--image" :src="require(`@/assets/images/heroes/${image}`)" />
     <div class="hero--text-container">
       <div class="hero--title">
-        <span>{{title}}</span>
+        <h2>{{title}}</h2>
         <div class="hero--description">
           <span>{{description}}</span>
           <i class="fas fa-arrow-circle-down"></i>

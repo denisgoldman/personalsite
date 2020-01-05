@@ -6,8 +6,8 @@
         </div>
        
       <div class="project-card--content-container">
-          <div class="project-card--content-container--subtitle">Amazing project</div>
-          <div class="project-card--content-container--title">Damn son</div>
+          <div class="project-card--content-container--subtitle">{{description}}</div>
+          <div class="project-card--content-container--title">{{title}}</div>
         </div>
     </div>
   </div>
@@ -32,7 +32,7 @@ export default {
 
 <style lang="scss">
 .project-card--container {
-  padding: 0 20px;
+//   padding: 0 20px;
 
   .project-card {
     display: flex;
