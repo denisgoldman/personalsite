@@ -4,7 +4,7 @@
     <div class="hero--text-container">
         <div class="hero--title">
             <span>{{$t('home.welcomeMessage')}}</span>
-            <div class="hero--description">{{$t('home.downloadResume')}}<i class="fas fa-arrow-circle-down"></i></div>
+            <div class="hero--description"><span>{{$t('home.downloadResume')}}</span><i class="fas fa-arrow-circle-down"></i></div>
             </div>
     </div>
   </div>
@@ -26,6 +26,9 @@ export default {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    @media (max-width: $breakpoint_mobile) {
+        height: 50%;
+    }
   }
   .hero--text-container {
     position: absolute;
@@ -80,7 +83,7 @@ export default {
                 color: #fff;
             }
 
-            &:hover {
+            span:hover {
                 text-decoration: underline;
                 cursor: pointer;
             }
