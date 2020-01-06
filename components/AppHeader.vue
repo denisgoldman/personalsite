@@ -176,6 +176,7 @@ export default {
 
   .header-container {
     position: fixed;
+    z-index: 100;
     top: 0;
     width: 100%;
     @include header_light;

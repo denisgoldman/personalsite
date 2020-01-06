@@ -49,7 +49,7 @@ export default {
     .project-card--image-container {
       position: relative;
       width: 100%;
-      padding-bottom: 100%;
+      padding-bottom: 60%; // this controls aspect ratio of the image, set to 100% for square image
       float: left;
       height: 0;
       .project-card--image-container--image {

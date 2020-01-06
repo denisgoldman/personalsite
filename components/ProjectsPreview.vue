@@ -4,9 +4,22 @@
       <h2 class="projects--title">{{$t('projects.previewTitle')}}</h2>
     </div>
     <div class="projects--container--cards">
-    <ProjectCard :title="('Amazing project')" :description="('Cool stuff')" image="preview.jpeg" />
-    <ProjectCard :title="('Amazing project 2')" :description="('Cool stuff')" image="preview.jpeg" />
-    <ProjectCard :title="('Amazing project 3')" :description="('Cool stuff')" image="preview.jpeg" />
+      <ProjectCard :title="('Amazing project')" :description="('Cool stuff')" image="preview.jpeg" />
+      <ProjectCard
+        :title="('Amazing project 2')"
+        :description="('Cool stuff')"
+        image="preview.jpeg"
+      />
+      <ProjectCard
+        :title="('Amazing project 3')"
+        :description="('Cool stuff')"
+        image="preview.jpeg"
+      />
+      <ProjectCard
+        :title="('Amazing project 4')"
+        :description="('Cool stuff')"
+        image="preview.jpeg"
+      />
     </div>
   </div>
 </template>
@@ -30,11 +43,14 @@ export default {
   }
   .projects--container--cards {
     display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 1.333rem;
-  @media (min-width: $layout_width) {
-    grid-gap: 3rem;
-  }
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1.333rem;
+    @media (min-width: $layout_width) {
+      grid-gap: 2rem;
+    }
+    @media (min-width: $breakpoint_mobile) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
   .projects--container--title-container {
     text-align: center;

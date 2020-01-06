@@ -17,6 +17,10 @@
       "welcomeMessage": "Hello! I am Denis — software developer with passion for design.",
       "downloadResume": "Resume (PDF)"
     },
+    "skills": {
+      "title": "Mad skillz",
+      "subtitle": "Just the right amount of everything."
+    },
     "projects": {
       "previewTitle": "Projects"
     },
