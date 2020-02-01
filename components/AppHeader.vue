@@ -99,10 +99,11 @@ export default {
 
     &:hover {
       transition: all 0.3s;
-      @include gradient_sunset;
-      -webkit-text-fill-color: transparent;
-      box-decoration-break: clone;
-      background-clip: text;
+      //@include gradient_sunset;
+      color: $colorGold;
+      //-webkit-text-fill-color: transparent;
+      //box-decoration-break: clone;
+      //background-clip: text;
     }
   }
 
@@ -219,10 +220,11 @@ export default {
           &:hover {
             cursor: pointer;
             transition: all 0.5s;
-            @include gradient_sunset;
-            -webkit-text-fill-color: transparent;
-            box-decoration-break: clone;
-            background-clip: text;
+            //@include gradient_sunset;
+            color: $colorGold;
+            //-webkit-text-fill-color: transparent;
+            //box-decoration-break: clone;
+            //background-clip: text;
           }
         }
       }

@@ -1,7 +1,7 @@
 <template>
   <div class="projects--container">
     <div class="projects--container--title-container">
-      <h1 class="projects--title">{{$t('projects.previewTitle')}}</h1>
+      <h1 class="projects--title dm">{{$t('projects.previewTitle')}}</h1>
     </div>
     <div class="projects--container--cards">
       <ProjectCard :title="('Amazing project')" :description="('Cool stuff')" image="preview.jpeg" />

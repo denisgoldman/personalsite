@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink :to="$i18n.path('')" class="header--logo" exact>Denis Goldman</NuxtLink>
+  <NuxtLink :to="$i18n.path('')" class="header--logo font-dm" exact>Denis Goldman</NuxtLink>
 </template>
 
 <script>
@@ -14,10 +14,7 @@ export default {
     font-weight: 700;
     color: #000;
     text-decoration: none;
-
-    @media (prefers-color-scheme: dark) {
-      color: #fff;
-    }
+    font-size: 1.3rem;
 
   }
 </style>

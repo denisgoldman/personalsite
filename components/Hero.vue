@@ -72,7 +72,7 @@ export default {
       right: 0;
       top: 50%;
       transform: perspective(1px) translateY(-50%);
-      padding: 20px;
+      padding: 20px 60px 20px 20px;
       font-family: "Quicksand", serif;
       font-weight: 700;
       font-size: 30px;
@@ -92,6 +92,7 @@ export default {
         transform: none;
         max-width: 100%;
         background: none;
+        padding: 20px;
       }
 
       span {
@@ -115,12 +116,13 @@ export default {
 
         span:hover {
           cursor: pointer;
-          @include gradient_sunset;
-          -webkit-text-fill-color: transparent;
-          box-decoration-break: clone;
-          background-clip: text;
+          color: $colorGold;
+          // @include gradient_sunset;
+          // -webkit-text-fill-color: transparent;
+          // box-decoration-break: clone;
+          // background-clip: text;
           & + i {
-            color: #ff6a00;
+            color: $colorGold;
           }
         }
 
