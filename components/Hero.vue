@@ -37,7 +37,7 @@ export default {
   position: relative;
   background: #fff;
   @media (prefers-color-scheme: dark) {
-    background: #000;
+    background: $areaColor_dark;
   }
   @media (max-width: $breakpoint_mobile) {
       height: auto;
@@ -49,6 +49,9 @@ export default {
     @media (max-width: $breakpoint_mobile) {
       height: 50%;
       min-height: 250px;
+    }
+    @media (prefers-color-scheme: dark) {
+      filter: grayscale(1) brightness(1.1);
     }
   }
   .hero--text-container {

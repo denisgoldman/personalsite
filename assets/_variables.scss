@@ -6,6 +6,7 @@ $textColor_dark: #fff;
 
 $backgroundColor_light: #f7f7f7;
 $backgroundColor_dark: #000;
+$areaColor_dark: #212121;
 
 $breakpoint_mobile: 768px;
 
@@ -16,7 +17,7 @@ $breakpoint_mobile: 768px;
 
 @mixin header_dark {
     box-shadow: none;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0,0,0,0.5);
     backdrop-filter: saturate(180%) blur(20px);
 }
 
@@ -26,7 +27,7 @@ $breakpoint_mobile: 768px;
 }
 
 @mixin blurred-background_dark {
-    background: rgba(0,0,0,0.8);
+    background: rgba(0,0,0,0.5);
     backdrop-filter: saturate(180%) blur(20px);
 }
 
