@@ -33,8 +33,12 @@ export default {
 <style lang="scss">
 .hero {
   max-width: $layout_width;
-  height: 500px;
+  height: 600px;
   position: relative;
+  background: #fff;
+  @media (prefers-color-scheme: dark) {
+    background: #000;
+  }
   @media (max-width: $breakpoint_mobile) {
       height: auto;
   }

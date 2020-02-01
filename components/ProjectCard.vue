@@ -33,6 +33,7 @@ export default {
 <style lang="scss">
 .project-card--container {
 //   padding: 0 20px;
+border: 5px solid transparent;
 
   .project-card {
     display: flex;

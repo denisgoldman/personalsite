@@ -1,6 +1,6 @@
 <template>
   <div class="Content">
-    <Hero :title="$t('home.welcomeMessage')" :description="$t('home.downloadResume')" image="denis_lg.jpeg"/>
+    <Hero :title="$t('home.welcomeMessage')" :description="$t('home.downloadResume')" image="anotherdenis_smol.png"/>
     <ProjectsPreview/>
   </div>
 </template>
