@@ -114,15 +114,24 @@ export default {
             margin-top: 20px;
         }
 
+        span {
+          transition: all 0.3s;
+          & + i {
+            transition: all 0.3s;
+          }
+        }
+
         span:hover {
           cursor: pointer;
           color: $colorGold;
+          transition: all 0.3s;
           // @include gradient_sunset;
           // -webkit-text-fill-color: transparent;
           // box-decoration-break: clone;
           // background-clip: text;
           & + i {
             color: $colorGold;
+            transition: all 0.3s;
           }
         }
 

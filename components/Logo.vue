@@ -15,6 +15,8 @@ export default {
     color: #000;
     text-decoration: none;
     font-size: 1.3rem;
-
+    @media (prefers-color-scheme: dark) {
+      color: $textColor_dark;
+    }
   }
 </style>

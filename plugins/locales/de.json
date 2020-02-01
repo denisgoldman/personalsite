@@ -18,8 +18,14 @@
       "downloadResume": "Lebenslauf (PDF)"
     },
     "skills": {
-      "title": "Mad skillz",
-      "subtitle": "Exakt, was du brauchst."
+      "title": "Ich biete.",
+      "subtitle": "Exact, was du brauchst?",
+      "webdev": "Web-Entwicklung",
+      "react": "React",
+      "vue": "Vue",
+      "javascript": "JavaScript",
+      "sass": "SASS",
+      "design": "UI-Design"
     },
     "projects": {
       "previewTitle": "Projekte"

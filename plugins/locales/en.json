@@ -18,8 +18,14 @@
       "downloadResume": "Resume (PDF)"
     },
     "skills": {
-      "title": "Mad skillz",
-      "subtitle": "Just the right amount of everything."
+      "title": "Expertise.",
+      "subtitle": "Just the right amount of everything",
+      "webdev": "Web Development",
+      "react": "React",
+      "vue": "Vue",
+      "javascript": "JavaScript",
+      "sass": "SASS",
+      "design": "UI-Design"
     },
     "projects": {
       "previewTitle": "Projects"
