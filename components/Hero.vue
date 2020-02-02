@@ -4,10 +4,10 @@
     <div class="hero--text-container">
       <div class="hero--title">
         <h2>{{title}}</h2>
-        <div class="hero--description">
+        <!-- <div class="hero--description">
           <span>{{description}}</span>
           <i class="fas fa-arrow-circle-down"></i>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -72,7 +72,7 @@ export default {
       right: 0;
       top: 50%;
       transform: perspective(1px) translateY(-50%);
-      padding: 20px 60px 20px 20px;
+      padding: 20px 60px 30px 30px;
       font-family: "Quicksand", serif;
       font-weight: 700;
       font-size: 30px;
