@@ -43,13 +43,13 @@ export default {
   }
   .projects--container--cards {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    //grid-template-columns: repeat(1, 1fr);
     grid-gap: 1.333rem;
     @media (min-width: $layout_width) {
       grid-gap: 0;
     }
     @media (min-width: $breakpoint_mobile) {
-      grid-template-columns: repeat(2, 1fr);
+      //grid-template-columns: repeat(2, 1fr);
     }
   }
   .projects--container--title-container {

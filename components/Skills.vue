@@ -42,6 +42,7 @@ export default {
 <style lang="scss">
 .skills {
   margin-top: 10px;
+  margin-bottom: 5px;
   background: $areaColor_light;
   @media (prefers-color-scheme: dark) {
     background: $areaColor_dark;

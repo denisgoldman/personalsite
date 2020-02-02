@@ -6,8 +6,8 @@
         </div>
        
       <div class="project-card--content-container">
-          <h3 class="project-card--content-container--title">{{title}}</h3>
           <div class="project-card--content-container--subtitle">{{description}}</div>
+          <div class="project-card--content-container--title">{{title}}</div>
         </div>
     </div>
   </div>
@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: "ProjectCard",
+  name: "ProjectCardFixed",
   props: {
     title: {
       type: String
@@ -32,34 +32,47 @@ export default {
 
 <style lang="scss">
 .project-card--container {
+//   padding: 0 20px;
 border: 5px solid transparent;
 
   .project-card {
-    display: -webkit-box;
-    height: 100%;
+    display: flex;
+    flex-grow: 1;
     flex-direction: column;
+    max-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    background: #fff;
     overflow: hidden;
     @media (prefers-color-scheme: dark) {
-        background: $areaColor_dark;
+        background: #222;
     }
     .project-card--image-container {
-      flex-grow: 1;
-      display: flex;
+      position: relative;
+      width: 100%;
+      padding-bottom: 60%; // this controls aspect ratio of the image, set to 100% for square image
+      float: left;
+      height: 0;
       .project-card--image-container--image {
         width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
         object-fit: cover;
       }
     }
     .project-card--content-container {
-        padding: 15px 20px 20px 30px;
+        padding: 24px;
         .project-card--content-container--subtitle {
-            font-size: 1.2rem;
+            font-size: 14px;
             font-family: "Quicksand", serif;
             font-weight: 500;
-            color: $secondaryTextColor;
+            margin-bottom: 10px;
         }
         .project-card--content-container--title {
-            margin-bottom: 5px;
+            font-size: 20px;
+            font-family: "Quicksand", serif;
+            font-weight: 700;
         }
     }
   }

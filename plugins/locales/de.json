@@ -28,6 +28,10 @@
       "design": "UI-Design"
     },
     "projects": {
+      "rolex": {
+        "title": "Rolex Verpackung",
+        "subtitle": "Was passiert, wenn Rolex ähnliche Verpackung haben würde wie Apple?"
+      },
       "previewTitle": "Projekte"
     },
     "about": {
