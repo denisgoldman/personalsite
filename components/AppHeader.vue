@@ -28,9 +28,9 @@
     </div>
     <nav class="header--menu">
       <div class="header--menu__links">
-        <NuxtLink :to="$i18n.path('')" class="header--link" exact>{{ $t('links.portfolio') }}</NuxtLink>
-        <NuxtLink :to="$i18n.path('about')" class="header--link" exact>{{ $t('links.resume') }}</NuxtLink>
-        <NuxtLink :to="$i18n.path('about')" class="header--link" exact>{{ $t('links.about') }}</NuxtLink>
+        <!-- <NuxtLink :to="$i18n.path('')" class="header--link" exact>{{ $t('links.portfolio') }}</NuxtLink> -->
+        <!-- <NuxtLink :to="$i18n.path('about')" class="header--link" exact>{{ $t('links.resume') }}</NuxtLink> -->
+        <!-- <NuxtLink :to="$i18n.path('about')" class="header--link" exact>{{ $t('links.about') }}</NuxtLink> -->
       </div>
       <div class="header--menu__options">
         <NuxtLink
@@ -99,11 +99,7 @@ export default {
 
     &:hover {
       transition: all 0.3s;
-      //@include gradient_sunset;
       color: $colorGold;
-      //-webkit-text-fill-color: transparent;
-      //box-decoration-break: clone;
-      //background-clip: text;
     }
   }
 
@@ -220,11 +216,7 @@ export default {
           &:hover {
             cursor: pointer;
             transition: all 0.5s;
-            //@include gradient_sunset;
             color: $colorGold;
-            //-webkit-text-fill-color: transparent;
-            //box-decoration-break: clone;
-            //background-clip: text;
           }
         }
       }

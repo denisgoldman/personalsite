@@ -1,9 +1,9 @@
 <template>
   <div class="grid">
       <ProjectCard class="span-3" :title="($t('projects.rolex.title'))" :description="($t('projects.rolex.subtitle'))" image="rolexpackagingsolid.jpg" />
-      <ProjectCard class="span-1" :title="('Amazing project')" :description="('Cool stuff')" image="preview.jpeg" />
-      <ProjectCard class="span-2" :title="('Amazing project')" :description="('Cool stuff')" image="preview.jpeg" />
-      <ProjectCard class="span-3" :title="('Amazing project')" :description="('Cool stuff')" image="preview.jpeg" />
+      <!-- <ProjectCard class="span-1" :title="('Amazing project')" :description="('Cool stuff')" image="preview.jpeg" /> -->
+      <!-- <ProjectCard class="span-2" :title="('Amazing project')" :description="('Cool stuff')" image="preview.jpeg" /> -->
+      <!-- <ProjectCard class="span-3" :title="('Amazing project')" :description="('Cool stuff')" image="preview.jpeg" /> -->
   </div>
 </template>
 
